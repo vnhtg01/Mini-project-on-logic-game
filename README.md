@@ -2,18 +2,17 @@
 Squaro Game
 
 # Compilation :
-To compile all the programs of the project :   
-    $ make all
+To compile all the programs of the project :   make all
     
 # Use : 
 the code usage is as follows: 
-
 
   * Step 1 : 
  ./random_generation <grid size> <file.txt>
  
  exemple :  ./random_generatione 5 release1.txt 
   result :
+    
             O---O---O---O---O---O
             | 0 | 1 | 3 | 3 | 2 |
             O---O---O---O---O---O
@@ -41,31 +40,32 @@ the code usage is as follows:
  
  exemple :  minisat res1.fnc sat.txt
   result :
-  ============================[ Problem Statistics ]=============================
-|                                                                             |
-|  Number of variables:            36                                         |
-|  Number of clauses:             183                                         |
-|  Parse time:                   0.00 s                                       |
-|  Eliminated clauses:           0.00 Mb                                      |
-|  Simplification time:          0.00 s                                       |
-|                                                                             |
-============================[ Search Statistics ]==============================
-| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
-|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
-===============================================================================
-===============================================================================
-restarts              : 1
-conflicts             : 0              (-nan /sec)
-decisions             : 1              (0.00 % random) (inf /sec)
-propagations          : 22             (inf /sec)
-conflict literals     : 0              (-nan % deleted)
-Memory used           : 12.00 MB
-CPU time              : 0 s
+    
+      ============================[ Problem Statistics ]=============================
+    |                                                                             |
+    |  Number of variables:            36                                         |
+    |  Number of clauses:             183                                         |
+    |  Parse time:                   0.00 s                                       |
+    |  Eliminated clauses:           0.00 Mb                                      |
+    |  Simplification time:          0.00 s                                       |
+    |                                                                             |
+    ============================[ Search Statistics ]==============================
+    | Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+    |           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+    ===============================================================================
+    ===============================================================================
+    restarts              : 1
+    conflicts             : 0              (-nan /sec)
+    decisions             : 1              (0.00 % random) (inf /sec)
+    propagations          : 22             (inf /sec)
+    conflict literals     : 0              (-nan % deleted)
+    Memory used           : 12.00 MB
+    CPU time              : 0 s
 
-SATISFIABLE
+    SATISFIABLE
 
 
-   * étape 4 : 
+   * step 4 : 
   ./solution_display <file.txt> <file.txt>
  
  exemple :  ./solution_display release1.txt sat.txt
