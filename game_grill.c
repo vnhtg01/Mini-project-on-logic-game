@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "grille_du_jeux.h"
+#include "game_grill.h"
  
  
  void initialisation_plateau(grille *p, int n){
@@ -86,7 +86,7 @@ int ecrire(grille gr, char* fichier){
 //remplissage aleatoire de la grillr
 void rempli_alea(grille *p){
   /* 
-     on remli aléatoirement la grille
+     on remli alï¿½atoirement la grille
      de pixels (taille n+1)
      puis, en fonction de cette grille, 
      on rempli les case
@@ -144,7 +144,7 @@ grille open(char* fichier){
     // initialisation du la grille(taille n)
     initialisation_plateau(&p, n);    
 
-    //lecture carcatère par caractère de la grille de valeurs
+    //lecture carcatï¿½re par caractï¿½re de la grille de valeurs
     for(i=0; i<n; i++){
       for(j=0; j<n; j++){
 

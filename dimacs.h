@@ -2,7 +2,7 @@
 #define DEF_DIMACS
 
 #include "manipulation_fnc.h"
-#include "lecture.h"
+#include "read.h"
 
 //lit un fichier dimacs et genere une fnc
 Fnc lecture_dimacs(char* nf);

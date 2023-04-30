@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "grille_du_jeux.h"
-#include "lecture.h"
+#include "game_grill.h"
+#include "read.h"
 
 int main(int argc, char *argv[]){
   grille p = {0, NULL, NULL};

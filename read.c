@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lecture.h"
+#include "read.h"
 
 int lire_int(char* str, int* pos){
   int n = 0;
