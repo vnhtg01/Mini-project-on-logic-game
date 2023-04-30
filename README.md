@@ -2,18 +2,18 @@
 Squaro Game
 
 # Compilation :
-Pour compiler l'ensemble des programmes du projet :   
+To compile all the programs of the project :   
     $ make all
     
-# Utilisation : 
-l'utilisation du code se fait comme suit : 
+# Use : 
+the code usage is as follows: 
 
 
-  * étape 1 : 
- ./generation_aleatoire <taille grille> <fichier.txt>
+  * Step 1 : 
+ ./random_generation <grid size> <file.txt>
  
- exemple :  ./generation_aleatoire 5 sortie1.txt 
-  résultat :
+ exemple :  ./random_generatione 5 release1.txt 
+  result :
             O---O---O---O---O---O
             | 0 | 1 | 3 | 3 | 2 |
             O---O---O---O---O---O
@@ -29,18 +29,18 @@ l'utilisation du code se fait comme suit :
 
           
           
-  * étape 2 : 
- ./sortie_dimacs <fichier.txt> <fichier.fnc>
+  * step 2 : 
+ ./release_dimacs <file.txt> <file.fnc>
  
- exemple : ./sortie_dimacs sortie1.txt res1.fnc
-  résultat : un fichier format dimacs (res1.fnc)
+ exemple : ./release_dimacs release1.txt release1.fnc
+  résultat : a dimacs format file (res1.fnc)
   
   
-   * étape 3 : 
- minisat <fichier.fnc> <fichier.txt>
+   * step 3 : 
+ minisat <file.fnc> <file.txt>
  
  exemple :  minisat res1.fnc sat.txt
-  résultat :
+  result :
   ============================[ Problem Statistics ]=============================
 |                                                                             |
 |  Number of variables:            36                                         |
@@ -66,11 +66,11 @@ SATISFIABLE
 
 
    * étape 4 : 
-  ./affichage_solution <fichier.txt> <fichier.txt>
+  ./solution_display <file.txt> <file.txt>
  
- exemple :  ./affichage_solution sortie1.txt sat.txt
-  résultat :
-        La grille est resoluble :
+ exemple :  ./solution_display release1.txt sat.txt
+  result :
+        The grid is solvable :
           O---X---X---X---X---O
           | 2 | 3 | 3 | 3 | 1 |
           O---X---O---X---O---O
