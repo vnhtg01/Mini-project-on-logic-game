@@ -71,6 +71,8 @@ the code usage is as follows:
  exemple :  ./solution_display release1.txt sat.txt
   result :
         The grid is solvable :
+    
+    
           O---X---X---X---X---O
           | 2 | 3 | 3 | 3 | 1 |
           O---X---O---X---O---O
